@@ -16,7 +16,7 @@ chomp @user;
 $length = @ids;
 for ($i = 0 ; $i <= $length ; $i++)
 {
-if ( $ids[$i] >= 1000)
+if ( $ids[$i] < 500 && $ids[$i] >= 1000)
 {
 print "$user[$i]\n";
 }
