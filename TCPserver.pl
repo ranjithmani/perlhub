@@ -1,4 +1,9 @@
 #!/usr/bin/perl -W
+#----------------------------------------------------------------------------------------------- 
+#This script will create a tcp server at given port
+#USAGE: TCPserver.pl <port>
+#EXAMPLE : TCPserver.pl 1440
+#----------------------------------------------------------------------------------------------
 use strict;
 use IO::Socket::INET;
 my $port = shift ||  die "[!]no port given\n";
